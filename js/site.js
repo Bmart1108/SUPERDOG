@@ -210,7 +210,30 @@ function displayData() {
             curEvents[index].date).toLocaleDateString();
 
         eventBody.appendChild(eventRow);
-        
+
+    }
+}
+
+function saveData() {
+        let curEvents = JSON.parse(localStorage.getItem("eventsArray")) || events;
+
+        let obj = {};
+
+        obj["event"] = document.getElementById("newEventName").value;
+        obj["city"] = document.getElementById("newEventCity").value;
+        let stateSel = document.getElementById("newEventState");
+        obj["state"] = stateSel.options[stateSel.selectedIndex].text;
+        obj["attendance"] = parseInt(document.getElementById("newEventAttendance").value, 10);
+        let eventDate = document.getElementById("newEventDate").value;
+        let eventDate2 = `${eventDate} 00:00`;
+        obj["date"] = new Date(eventDate2).toLocaleString();
+
+        curEvents.push(obj);
+
+        localStorage.setItem("eventsArray", JSON.stringify(curEvents));
+
+        buildDropDown();
+        displayData();
+
     }
 
-}
