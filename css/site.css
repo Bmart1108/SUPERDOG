@@ -14,7 +14,7 @@ main>.container {
 
 /*-----NAVBAR STYLES---*/
 .navbarBG {
-    background-color: var(--bm-dark-color);
+    background-color: #0e0ec9
 }
 
 
@@ -44,22 +44,23 @@ main>.container {
 
 /*----Button Styles override Bootstrap Styles----*/
 .btn-outline-primary{
-    color: var(--bm-dark-color);
-    border-color: var(--bm-secondary-color) !important;
+    color: black;
+    border-color: black !important;
 }
 
 .btn-outline-primary:hover,
 .btn-outline-primary:active,
 .btn-outline-primary:focus{
-    border-color: var(--bm-primary-color) !important;
-    background-color: var(--bm-secondary-color);
+    border-color: black !important;
+    background-color: black;
  }
 
 
 .btn-primary{
     color: white !important;
-    background-color: var(--bm-secondary-color) !important;
-    border-color: var(--bm-secondary-color);
+    font-weight: bold;
+    background-color: #0e0ec9 !important;
+    border-color: black;
 }
 
 .btn-primary:hover,
@@ -67,14 +68,14 @@ main>.container {
 .btn-primary:visited,
 .btn-primary:focus{
     filter: brightness(1.1) !important;
-    border-color: var(--bm-secondary-color);
+    border-color: black;
 }
 
 
 
 /*----FOOTER STYLES----*/
 .footer{
-    background-color: var(--bm-dark-color);
+    background-color: #0e0ec9;
     padding-right: 1rem;
     color: var(--bm-light-color);
 
@@ -93,6 +94,6 @@ footer .social>a{
 }
 
 footer .social>a:hover{
-    color:var(--bm-secondary-color);
+    color: black;
     opacity: .90;
 }
