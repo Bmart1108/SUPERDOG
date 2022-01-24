@@ -14,14 +14,21 @@ main>.container {
 
 /*-----NAVBAR STYLES---*/
 .navbarBG {
-    background-color: #0e0ec9
+background: #5433FF;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #A5FECB, #20BDFF, #5433FF);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #A5FECB, #20BDFF, #5433FF);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
 
 /*----CHECKBOX COLORS----*/
 
 .checklisticon{
-    color:var(--bm-secondary-color);
+    color: #0e0ec9;
 }
 
 /*----ICON COLORS----*/
@@ -75,7 +82,14 @@ main>.container {
 
 /*----FOOTER STYLES----*/
 .footer{
-    background-color: #0e0ec9;
+background: #5433FF;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #A5FECB, #20BDFF, #5433FF);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #A5FECB, #20BDFF, #5433FF);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
     padding-right: 1rem;
     color: var(--bm-light-color);
 
@@ -88,12 +102,12 @@ main>.container {
 }
 
 footer .social>a{
-    color: var(--bm-light-color);
+    color: var(--bm-dark-color);
     opacity: .75;
 
 }
 
 footer .social>a:hover{
-    color: black;
+    color: blue;
     opacity: .90;
 }
